@@ -1,11 +1,19 @@
 .container {
-  padding: 4rem 2rem;
+  padding: 4rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
   font-family: $fontFamily;
+  text-align: center;
+  margin: 0 auto;
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+  @media (min-width: 1400px) {
+    width: 40%;
+  }
   &__header {
     font-weight: lighter;
     &--bold {
@@ -17,15 +25,22 @@
     gap: 0.5rem;
     flex-direction: column;
     width: 100%;
+    @media (min-width: 1400px) {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
   &__input {
     padding: 0.7rem;
     border-radius: 25px;
     border: 2px solid $paleBlue;
-    color: $paleBlue;
-
     font-family: $fontFamily;
+    width: 100%;
+    @media (min-width: 1400px) {
+      width: 70%;
+    }
     &--btn {
+      flex: 1;
       background-color: $blue;
       font-weight: bold;
       color: #fff;
