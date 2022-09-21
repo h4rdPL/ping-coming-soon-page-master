@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="stylesheet" href="styles/style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="subsrcribe">
+      <section class="container">
+        <img src="./images/logo.svg" alt="logo" class="container__logo" />
+        <h1 class="container__header">We are launching soon!</h1>
+        <p class="container__paragraph">Subscribe and get notified</p>
+        <form class="container__form">
+          <input type="text" id="" class="container__input" />
+          <input type="submit" value="Notify me" class="container__input" />
+        </form>
+        <img
+          src="images/illustration-dashboard.png"
+          alt="dashboard-illustration"
+          class="container__images"
+        />
+        <ul class="container__list">
+          <li class="container__icon">
+            <a href="#facebook" class="container__link">
+              <img src="./images/messenger.svg" alt="facebook" />
+            </a>
+          </li>
+          <li class="container__icon">
+            <a href="#twitter" class="container__link">
+              <img src="./images/twitter.svg" alt="twitter" />
+            </a>
+          </li>
+          <li class="container__icon">
+            <a href="#instagram" class="container__link">
+              <img src="./images/instagram.svg" alt="instagram" />
+            </a>
+          </li>
+        </ul>
+        <p class="container__copyright">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
 </html>
