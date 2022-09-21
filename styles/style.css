@@ -17,4 +17,47 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: "Libre Franklin", sans-serif;
+}
+.container__header {
+  font-weight: lighter;
+}
+.container__header--bold {
+  font-weight: bold;
+}
+.container__form {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  width: 100%;
+}
+.container__input {
+  padding: 0.7rem;
+  border-radius: 25px;
+  border: 2px solid hsl(223deg, 100%, 88%);
+  color: hsl(223deg, 100%, 88%);
+  font-family: "Libre Franklin", sans-serif;
+}
+.container__input--btn {
+  background-color: hsl(223deg, 87%, 63%);
+  font-weight: bold;
+  color: #fff;
+}
+.container__list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.container__icon {
+  width: 30px;
 }/*# sourceMappingURL=style.css.map */
